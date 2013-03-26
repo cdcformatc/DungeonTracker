@@ -16,8 +16,8 @@ def make_grid(screen, field_size, grid_size, color):
     grid = grid.convert()
     
     # set the alpha colorkey and fill the grid background with that color
-    # grid.set_colorkey(transparent)
-    # grid.fill(transparent)
+    grid.set_colorkey(transparent)
+    grid.fill(transparent)
     
     # draw grid lines
     for i in xrange(grid_size, field_size+grid_size, grid_size):
